@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "42731ffd-262e-4216-b4e3-264e707c50e7",
+		"name": "Reactive Api Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{endpoint_prefix_user}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{endpoint_prefix_user}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Deneme\",\r\n    \"mail\": \"deneme@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/{{endpoint_prefix_user}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{endpoint_prefix_user}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:8080",
+			"type": "default"
+		},
+		{
+			"key": "endpoint_prefix_user",
+			"value": "api/v1/users",
+			"type": "default"
+		}
+	]
+}
