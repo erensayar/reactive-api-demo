@@ -23,6 +23,24 @@
 			"response": []
 		},
 		{
+			"name": "Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{endpoint_prefix_user}}/c3bfefe6-f035-4727-8db7-541422b4484c",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{endpoint_prefix_user}}",
+						"c3bfefe6-f035-4727-8db7-541422b4484c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Save",
 			"request": {
 				"method": "POST",
@@ -43,6 +61,59 @@
 					],
 					"path": [
 						"{{endpoint_prefix_user}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c3bfefe6-f035-4727-8db7-541422b4484c\",\r\n    \"name\": \"Erennnn\",\r\n    \"mail\": \"erennnn@mail.com\",\r\n    \"new\": false\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/{{endpoint_prefix_user}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{endpoint_prefix_user}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c3bfefe6-f035-4727-8db7-541422b4484c\",\r\n    \"name\": \"Erennnn\",\r\n    \"mail\": \"erennnn@mail.com\",\r\n    \"new\": false\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/{{endpoint_prefix_user}}/c3bfefe6-f035-4727-8db7-541422b4484c",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{endpoint_prefix_user}}",
+						"c3bfefe6-f035-4727-8db7-541422b4484c"
 					]
 				}
 			},
